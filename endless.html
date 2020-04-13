@@ -15,9 +15,12 @@
       ga('send', 'pageview');
     </script>
 
+    <script src="http://app.cionic.com/cionic/55/cionic.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://app.cionic.com/cionic/55/jquery-3.1.0.js"></script>
     <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
     <script type="application/javascript" src="./lib/bundle.js"></script>
+
   </head>
   <body>
     <section id="screen">
@@ -36,10 +39,10 @@
         <h1>Endless Revolution</h1>
 
         <div class="stats">
-          <div class="life">
+          <!-- <div class="life">
             <h2>Life</h2>
             <p id="life">100</p>
-          </div>
+          </div> -->
           <div class="scoreboard">
             <h2>Score</h2>
             <p id="score">0</p>
@@ -72,6 +75,14 @@
           <a onClick="board.openModal()">Instructions
           </a>
         </div>
+
+        <div id="cionic-container">
+          <input type="text" name="host" id="host" style="width:150px" value="localhost:8080"/>
+          <input type="button" id="cionic-connect" value="Connect"/>
+          <div id="log"></div>
+      </div>
+
+      <div><h1 class="codeText" id="code">fetching code </h1></div>
 
         <div class="links">
           <a href="https://github.com/garyeh/endless-revolution" target="_blank"><img src="./assets/images/github.png"/></a>
