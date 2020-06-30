@@ -1,0 +1,267 @@
+body, section, div, span, p, h1, h2, canvas {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+#canvas {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+}
+
+#screen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin: 2% 0;
+}
+
+h1 {
+  color: white;
+  font-size: 45px;
+  text-align: center;
+}
+
+.scoreboard, .life {
+  border: 5px solid white;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  margin: 10px 5px;
+}
+
+.life {
+  width: 100px;
+}
+
+.scoreboard {
+  width: 175px;
+}
+
+.scoreboard h2, .life h2 {
+  padding: 8px;
+  font-size: 20px;
+}
+
+.stats {
+  display: flex;
+}
+
+#score, #life {
+  background-color: black;
+  font-size: 25px;
+  padding: 5px;
+}
+
+#life {
+  background-color: green;
+}
+
+#board {
+  max-width: 100%;
+  border: 1px solid black;
+  position: relative;
+}
+
+#controls {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid black;
+  background-color: #800000;
+}
+
+.difficulty {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.difficulty div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.difficulty h2 {
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+
+.difficulty img {
+  height: 40px;
+  width: 40px;
+}
+
+.difficulty button {
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin: 5px 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  width: 120px;
+}
+
+.difficulty button:hover {
+  cursor: pointer;
+}
+
+#light {
+  background-color: #ffff80;
+}
+
+#light:hover {
+  box-shadow: 1px 1px 1px #ffff80;
+}
+
+#standard {
+  background-color: #ff80ff;
+}
+
+#standard:hover {
+  box-shadow: 1px 1px 1px #ff80ff;
+}
+
+#heavy {
+  background-color: #80ff80;
+}
+
+#heavy:hover {
+  box-shadow: 1px 1px 1px #80ff80;
+}
+
+#mute {
+  border: none;
+  margin: 20px 0 5px 0;
+  font-size: 80px;
+  color: white;
+  background-color: #800000;
+  outline: none;
+  width: 75px;
+}
+
+#mute:hover {
+  cursor: pointer;
+  transform: translateY(1px);
+}
+
+#muteIcon {
+  display: flex;
+}
+
+.instructions {
+  display: flex;
+  font-weight: 900;
+  margin-top: 10px;
+  color: white;
+}
+
+.instructions > * {
+  border: none;
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif;
+  margin: 20px 0;
+}
+
+.instructions:hover {
+  transform: translateY(1px);
+  cursor: pointer;
+}
+
+.links {
+  padding: 10px;
+  margin-top: 8px;
+}
+
+.links img {
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+}
+
+.links img:hover {
+  transform: translateY(1px);
+}
+
+#instructionModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 720px;
+  height: 720px;
+  z-index: -1;
+  padding-bottom: 20px;
+}
+
+#instructionModal div {
+  height: 660px;
+  width: 720px;
+  background-color: black;
+}
+
+#instructionModal button {
+  display: block;
+  position: absolute;
+  bottom: 120px;
+  left: 258px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 200px;
+  background-color: #ffff80;
+  padding: 15px 20px;
+}
+
+#instructionModal button:hover {
+  cursor: pointer;
+  background-color: #ffff00;
+}
+
+#instructionModal.visible {
+  z-index: 1;
+  opacity: 1;
+}
+
+#instructionImage {
+  width: 720px;
+  height: 500px;
+  position: absolute;
+  top: 30px;
+}
+
+#cionic-container {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 4px;
+}
+
+#log {
+  width:300px; 
+  height:100px;
+  background-color:#fff;
+  color:green;
+  overflow-y:scroll;
+  overflow-x: hidden;
+  border: 1px solid #999;
+  margin: 5px 0px;
+}
+
+.codeText {
+  color: white;
+  font-size: large;
+}
